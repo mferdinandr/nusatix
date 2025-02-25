@@ -1,17 +1,17 @@
 'use client';
 
-import BlurText from './components/effects/BlurText';
+import BlurText from '../components/effects/BlurText';
 
 export default function Home() {
 	return (
-		<div className="relative w-screen overflow-hidden h-[200vh]">
+		<div className="relative overflow-hidden h-[200vh]">
 			<div className="h-screen relative">
 				<video
 					src="/videos/bali.webm"
 					autoPlay
 					muted
 					loop
-					className="absolute h-screen object-cover"
+					className="absolute h-screen object-cover w-screen"
 				/>
 
 				<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
@@ -27,8 +27,8 @@ export default function Home() {
 					/>
 				</div>
 
-				<div className="absolute bottom-16 sm:inset-x-10 inset-x-4">
-					<div className="rounded-t-xl h-auto w-1/3 p-3 relative bg-green-300 text-black">
+				<div className="absolute bottom-16">
+					<div className="rounded-t-xl h-auto w-1/2 p-3 relative bg-green-300 text-black">
 						hai
 					</div>
 					<div className="rounded-b-xl rounded-tr-xl h-40  bg-green-200 text-black">
